@@ -9,11 +9,11 @@ public class ExerciseTwo{
     public static void main(String []args){
         System.out.println("Enter first string: ");
         Scanner input = new Scanner(System.in);
-        str wordone;
-        wordone = input.nextstr();
+        String wordone;
+        wordone = input.nextLine();
         System.out.println("Enter second string: ");
-        str wordtwo;
-        wordtwo = input.nextstr();
+        String wordtwo;
+        wordtwo = input.nextLine();
 
         System.out.println(wordone.equals(wordtwo));
         input.close();
