@@ -10,42 +10,18 @@ public class ExerciseSix{
 
 
     
-
-        System.out.println("Enter a number: ");
+        int num = 0;
         Scanner input = new Scanner(System.in);
-        int num;
-        num = input.nextInt();
-
-        int index = 0;
-        while (index <=0){
-            if (index >=0){
-
-                System.out.println("Valid number");
-            break;
-
-
-
-            }
-            else{
-                System.out.println("Invalid Number");
+        while(num<=0){
+   
+            System.out.println("Enter a number: ");
             
-            break;
-            
-            }
-
-
+            num = input.nextInt();
+        
         }
+        System.out.println("Valid number");
 
-
-        
-        
-        
-        
-        
         input.close();
-
-
-
 
 
     }
