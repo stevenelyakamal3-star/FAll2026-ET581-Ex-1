@@ -14,7 +14,7 @@ public class ExerciseFive{
         Scanner input = new Scanner(System.in);
         String word;
         word = input.nextLine();
-        int count = 0;
+        
         boolean Symmetric = true;
 
 

@@ -14,7 +14,7 @@ public class ExerciseSix{
 
         for(int i = 0; i<word.length(); i++){
 
-            if(!Character.isLowerCase(word.charAt(i))){
+            if 
 
              onlylowercase = false;   
 
