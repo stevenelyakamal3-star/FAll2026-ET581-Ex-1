@@ -21,5 +21,9 @@ public class ExerciseThree{
             }
             System.out.println();
         }
+    
+    input.close();
+    
+    
     }
 }
