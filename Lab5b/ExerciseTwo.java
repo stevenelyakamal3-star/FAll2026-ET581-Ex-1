@@ -13,26 +13,23 @@ public class ExerciseTwo{
             {20, 3, 15},
             {7, 25, 10}
         };
+        int largest = array[0][2];
 
         for (int i = 0; i<array.length; i++){
-            for (int j = 0; j<array.length-1; j++){
-
-                int a = array[i][j];
-                int b = array[i+1][j+1];
+            for (int c = 0; c<array.length; c++){
 
 
-
-
-                if(a>b){
-                    int temp = array[i][j];
-                    array[i][j] = array[i+1][j+1];
-                    array[i+1][j+1] = temp;
+                if (array[i][c]>largest){
+                    largest = array[i][c];
+                    
                 }
-                
-            }
-            System.out.println("Largest: " + array[i+1][j+1]);
-        } 
 
+
+            }
+
+
+        }
+        System.out.println("Largest: " + largest);
 
 
     }
