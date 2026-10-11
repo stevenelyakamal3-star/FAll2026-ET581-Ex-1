@@ -5,6 +5,14 @@ public class Main {
         fruit.showinfo();
 
     }
+    static void compareWeight(Fruit fruit1, Fruit fruit2){
+        if (fruit2.weight > fruit1.weight){
+            System.out.println(fruit2.name +" is heavier than " + fruit1.name);
+        }
+
+
+
+    }
 
 
     public static void main(String[] args){
@@ -27,7 +35,7 @@ public class Main {
         printFruit(fruit3);
         printFruit(fruit4);
         printFruit(fruit5);
-
+        compareWeight(fruit1, fruit2);
     }
      
     
