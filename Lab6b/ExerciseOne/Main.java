@@ -1,6 +1,17 @@
 
 
 public class Main {
+    
+    static void printProducts(Product[] products){
+        for (int i = 0; i<products.length; i++){
+            System.out.println(products[i]);
+        }
+
+    }
+    
+    
+    
+    
     public static void main(String[] args){
 
         
@@ -32,10 +43,8 @@ public class Main {
         products[3] = new Product("EggPlant parmajian", 14.99);
         products[4] = new Product("Pizza" ,20.00);
         
-        for (int i = 0; i<products.length; i++){
-            System.out.println(products[i]);
-        }
         
+        printProducts(products);
     }
 
     
