@@ -13,6 +13,29 @@ public class Main {
 
 
     }
+    static Fruit[] getApples(Fruit[] fruits){
+        int count = 0;
+        
+        for(int i = 0; i<fruits.length; i++){
+            if (fruits[i].name.equals("Apple")){
+                count++;
+
+
+            }
+        }
+        Fruit[] apples = new Fruit[count];
+        int j = 0;
+        for (int i = 0; i<fruits.length; i++){
+            if (fruits[i].name.equals("Apple")){
+                apples[j] = fruits[i]; 
+                j++;
+            }
+
+        }
+        return apples;
+
+
+    }
 
 
     public static void main(String[] args){
@@ -36,6 +59,11 @@ public class Main {
         printFruit(fruit4);
         printFruit(fruit5);
         compareWeight(fruit1, fruit2);
+        Fruit[] applearray = getApples(fruits);
+        for (int i = 0; i <applearray.length; i++){
+            applearray[i].showinfo();
+
+        }
     }
      
     
