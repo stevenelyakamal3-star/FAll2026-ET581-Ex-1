@@ -27,26 +27,27 @@ public class Main {
     public static void main(String[] args){
 
         
-        Product p1 = new Product("Apple",12.43);
-        Product p2 = new Product("Apple", 12.43);
-        Product p3 = new Product("Apples", 12.43);
-        Product p4 = new Product("Transformers", 10.00);
-        Product p5 = new Product("Softner", 15.00); 
-        Product p6 = new Product("Sweetner", 1.50);
-        Product p7 = new Product("Pretzels", 2.00);
-        Product p8 = new Product("Chips", 1.25);
+        Product p1 = new Product("Apple",1.25);
+        Product p2 = new Product("Apple", 1.25);
+        Product p3 = new Product("Orange", 1.25);
         System.out.println("Product info: ");
         System.out.println(p1);
-        System.out.println(p2);
-        p3.setName("orange");
-        p3.setPrice(14.43);
-        System.out.println(p3.getName());
-        System.out.println(p3.getPrice());
         System.out.println(p1.equals(p2));
         System.out.println(p1.equals(p3));
-        System.out.println(p4.compareTo(p5));
-        System.out.println(p5.compareTo(p4));
         System.out.println(Product.count);
+        Product p4 = new Product("Mango");
+        p3.setName("orange");
+        p3.setPrice(14.43);
+        p4.setName("Bannana");
+        p4.setPrice(1.25);
+        System.out.println(p4.getName());
+        System.out.println(p4.getPrice());
+        Product p5 = new Product("Softner", 10.00); 
+        Product p6 = new Product("Sweetner", 15.00);
+        System.out.println(p5.compareTo(p6));
+        System.out.println(p6.compareTo(p5));
+        Product p7 = new Product("Pretzels", 2.00);
+        Product p8 = new Product("Chips", 1.25);
         Product[] products = new Product[5];
 
         products[0] = new Product("Toothpaste", 9.98);
