@@ -1,6 +1,18 @@
 
 
 public class Main {
+    static void sortProducts(Product[] products){
+        for (int i = 0; i <products.length-1; i++){
+            for(int j = 0; j< products.length -1 -i; j++){
+                if(products[j].compareTo(products[j+1])>0){
+                
+                    Product temp = products[j];
+                    products[j]= products[j+1];
+                    products[j+1]= temp;
+                }
+            }
+        }
+    }
     
     static void printProducts(Product[] products){
         for (int i = 0; i<products.length; i++){
@@ -39,12 +51,13 @@ public class Main {
 
         products[0] = new Product("Toothpaste", 9.98);
         products[1] = new Product("Sweet potato", 10.00);
-        products[2] = new Product("Vegetable soup", 12.99);
+        products[2] = new Product("Vegetable soup", 16.99);
         products[3] = new Product("EggPlant parmajian", 14.99);
         products[4] = new Product("Pizza" ,20.00);
         
-        
+        sortProducts(products);
         printProducts(products);
+        
     }
 
     
