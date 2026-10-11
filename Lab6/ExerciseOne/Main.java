@@ -59,6 +59,7 @@ public class Main {
         printFruit(fruit4);
         printFruit(fruit5);
         compareWeight(fruit1, fruit2);
+        System.out.println("print Fruit[] apples: ");
         Fruit[] applearray = getApples(fruits);
         for (int i = 0; i <applearray.length; i++){
             applearray[i].showinfo();
