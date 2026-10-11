@@ -27,5 +27,19 @@ public class Product {
     public String toString(){
         return "Name: " + this.name + " , " + "Price: " + this.price;
     }
+    public boolean equals(Product p){
+        if ((name == p.name) && (price == p.price)){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+    public int compareTo(Product p){
+        return (int)(this.price - p.price);
+    }
+    static int count(){
+        
+    }
     
 }
