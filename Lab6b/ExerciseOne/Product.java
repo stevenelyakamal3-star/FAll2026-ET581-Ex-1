@@ -3,14 +3,16 @@
 public class Product {
     private String name;
     private double price;
+    static int count;
     Product(String name){
         this.name = name;
+            count++;
 
     }
     Product(String name, double price){
         this.name = name;
         this.price = price;
-
+        count++;
     }
     public String getName(){
         return name;
@@ -28,7 +30,7 @@ public class Product {
         return "Name: " + this.name + " , " + "Price: " + this.price;
     }
     public boolean equals(Product p){
-        if ((name == p.name) && (price == p.price)){
+        if ((name.equals(p.name)) && (price== (p.price))){
             return true;
         }
         else{
@@ -38,8 +40,6 @@ public class Product {
     public int compareTo(Product p){
         return (int)(this.price - p.price);
     }
-    static int count(){
-        
-    }
+    
     
 }
