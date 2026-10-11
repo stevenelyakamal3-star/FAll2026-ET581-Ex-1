@@ -1,4 +1,12 @@
 public class Main {
+
+    static void printFruit(Fruit fruit) {
+
+        fruit.showinfo();
+
+    }
+
+
     public static void main(String[] args){
         
         Fruit fruit1 = new Fruit("Apple", "red", .5);
@@ -13,7 +21,14 @@ public class Main {
                           fruit5,};
         for(int i = 0; i <fruits.length; i++){
             fruits[i].showinfo();
-        }                  
-    } 
+        } 
+        printFruit(fruit1);
+        printFruit(fruit2);
+        printFruit(fruit3);
+        printFruit(fruit4);
+        printFruit(fruit5);
+
+    }
+     
     
 }
