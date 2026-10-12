@@ -36,8 +36,6 @@ public class Main {
         System.out.println(p1.equals(p3));
         System.out.println(Product.count);
         Product p4 = new Product("Mango");
-        p3.setName("orange");
-        p3.setPrice(14.43);
         p4.setName("Bannana");
         p4.setPrice(1.25);
         System.out.println(p4.getName());
