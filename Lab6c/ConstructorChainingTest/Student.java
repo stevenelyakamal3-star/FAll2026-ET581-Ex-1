@@ -4,8 +4,7 @@ public class Student{
     static {//  instance or non static block
         System.out.println("This is a static block");
     }
-
-
+    
     
     
     Student(){
@@ -21,6 +20,7 @@ public class Student{
 
     }
     Student(String name, int age){
+        this("Student(String name; int age)", 2);
 
 
         this.name = name;
