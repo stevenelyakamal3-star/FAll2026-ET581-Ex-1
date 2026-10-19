@@ -20,7 +20,7 @@ public class Student{
 
     }
     Student(String name, int age){
-        this("Student(String name; int age)", 2);
+        this("Student(String name, int age)", 2);
 
 
         this.name = name;
