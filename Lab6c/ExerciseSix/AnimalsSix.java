@@ -13,7 +13,13 @@ public class AnimalsSix {
     }
     void displayinfo(){
         System.out.println(this.name + ", " + this.type + ", " + this.age);
-    }    
+    }  
+    public static void printAnimals(AnimalsSix[] animals){
+         for (int i = 0; i<animals.length; i++){
+            animals[i].displayinfo();
+        }
+
+    }  
     public static void main(String[] args){
         AnimalsSix[] animals = {
               new AnimalsSix("Lion", "mammal", 5),
@@ -22,9 +28,8 @@ public class AnimalsSix {
               new AnimalsSix("Dolphin", "Mammal", 8),
               new AnimalsSix("Parrot", "Bird", 4)
         };
+        AnimalsSix.printAnimals(animals);
 
-        for (int i = 0; i<animals.length; i++){
-            animals[i].displayinfo();
-        }
+       
     }
 }
