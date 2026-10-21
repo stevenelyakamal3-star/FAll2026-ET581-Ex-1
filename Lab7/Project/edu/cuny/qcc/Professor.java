@@ -1,4 +1,4 @@
-package Edu.Cuny.QCC;
+package edu.cuny.qcc;
 
 public class Professor {
     
