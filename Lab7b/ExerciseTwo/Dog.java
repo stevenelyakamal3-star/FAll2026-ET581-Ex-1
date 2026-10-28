@@ -4,12 +4,12 @@ public class Dog extends Animal {
     
     
     
-    Dog(String name){
-        this.name = name;
+   public Dog(String name){
+        super(name);
 
     }
-     void makeSound(){
-        System.out.println("Woof");
+     public void makeSound(){
+        System.out.println("Woof!");
      }
     
 }
