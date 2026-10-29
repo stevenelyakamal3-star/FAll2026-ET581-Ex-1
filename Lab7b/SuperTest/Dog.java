@@ -12,5 +12,8 @@ public class Dog extends Animal{
         animals[i] = new Animal(i, "animal");
        }
         System.out.println( Arrays.toString(animals));
+        animals[1] = new Dog (4, "dog"); //dog is an animal 
+        animals[2] = new Cat(5, "cat");
+        System.out.println( Arrays.toString(animals));
     }  
 }
