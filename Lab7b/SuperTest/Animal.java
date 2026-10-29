@@ -3,12 +3,12 @@
 public class Animal {
     int age;
     String name;
-    Animal(String name, int age){
+    Animal(int age, String name){
         this.name=name;
         this.age = age;
 
     }   
-    String toString(){
+    public String toString(){
         return this.age + " " + this.name;
     }
     public static void main(String[] args){
